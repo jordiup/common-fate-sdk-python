@@ -1,4 +1,4 @@
-# openapi_client.model.request_event.RequestEvent
+# commonfate.model.request_event.RequestEvent
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

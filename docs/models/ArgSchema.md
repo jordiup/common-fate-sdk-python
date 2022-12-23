@@ -1,4 +1,4 @@
-# openapi_client.model.arg_schema.ArgSchema
+# commonfate.model.arg_schema.ArgSchema
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

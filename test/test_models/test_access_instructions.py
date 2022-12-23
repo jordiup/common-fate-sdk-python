@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.access_instructions import AccessInstructions
-from openapi_client import configuration
+import commonfate
+from commonfate.model.access_instructions import AccessInstructions
+from commonfate import configuration
 
 
 class TestAccessInstructions(unittest.TestCase):

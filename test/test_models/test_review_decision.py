@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.review_decision import ReviewDecision
-from openapi_client import configuration
+import commonfate
+from commonfate.model.review_decision import ReviewDecision
+from commonfate import configuration
 
 
 class TestReviewDecision(unittest.TestCase):

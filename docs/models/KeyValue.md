@@ -1,4 +1,4 @@
-# openapi_client.model.key_value.KeyValue
+# commonfate.model.key_value.KeyValue
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

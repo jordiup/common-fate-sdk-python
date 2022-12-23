@@ -1,4 +1,4 @@
-# openapi_client.model.grant.Grant
+# commonfate.model.grant.Grant
 
 A temporary assignment of a user to a principal.
 

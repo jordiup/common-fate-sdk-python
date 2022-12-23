@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.approval_method import ApprovalMethod
-from openapi_client import configuration
+import commonfate
+from commonfate.model.approval_method import ApprovalMethod
+from commonfate import configuration
 
 
 class TestApprovalMethod(unittest.TestCase):

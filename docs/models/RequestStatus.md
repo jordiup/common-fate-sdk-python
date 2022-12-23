@@ -1,4 +1,4 @@
-# openapi_client.model.request_status.RequestStatus
+# commonfate.model.request_status.RequestStatus
 
 The status of an Access Request. 
 

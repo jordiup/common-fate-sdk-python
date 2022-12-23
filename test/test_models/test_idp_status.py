@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.idp_status import IdpStatus
-from openapi_client import configuration
+import commonfate
+from commonfate.model.idp_status import IdpStatus
+from commonfate import configuration
 
 
 class TestIdpStatus(unittest.TestCase):

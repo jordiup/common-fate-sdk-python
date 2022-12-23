@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# openapi_client.apis.tags.end_user_api.EndUserApi
+# commonfate.apis.tags.end_user_api.EndUserApi
 
 All URIs are relative to *http://localhost:8080*
 
@@ -40,18 +40,18 @@ endpoint returns an array of relevant access rules (used in combination with gra
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.lookup_access_rule import LookupAccessRule
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.lookup_access_rule import LookupAccessRule
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -67,7 +67,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->access_rule_lookup: %s\n" % e)
 ```
 ### Parameters
@@ -175,18 +175,18 @@ Returns an access request.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_detail import RequestDetail
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request_detail import RequestDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -200,7 +200,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->admin_get_request: %s\n" % e)
 ```
 ### Parameters
@@ -306,17 +306,17 @@ Users can cancel an access request that they have created while it is in the PEN
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
+import commonfate
+from commonfate.apis.tags import end_user_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -330,7 +330,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->cancel_request: %s\n" % e)
 ```
 ### Parameters
@@ -458,17 +458,17 @@ Delete a favorite
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
+import commonfate
+from commonfate.apis.tags import end_user_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -480,7 +480,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         api_response = api_instance.delete_favorite(
             path_params=path_params,
         )
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->delete_favorite: %s\n" % e)
 ```
 ### Parameters
@@ -537,18 +537,18 @@ Get access instructions for a request.  Returns information on how to access the
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.access_instructions import AccessInstructions
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.access_instructions import AccessInstructions
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -562,7 +562,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->get_access_instructions: %s\n" % e)
 ```
 ### Parameters
@@ -626,17 +626,17 @@ Get access token for a request.  Returns information on how to access the role o
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
+import commonfate
+from commonfate.apis.tags import end_user_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -650,7 +650,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->get_access_token: %s\n" % e)
 ```
 ### Parameters
@@ -764,18 +764,18 @@ Returns information about the currently logged in user.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.user import User
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -784,7 +784,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get details for the current user
         api_response = api_instance.get_me()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->get_me: %s\n" % e)
 ```
 ### Parameters
@@ -843,18 +843,18 @@ Returns a Common Fate user.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.user import User
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -868,7 +868,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->get_user: %s\n" % e)
 ```
 ### Parameters
@@ -948,18 +948,18 @@ Returns a HTTP401 response if the user is not the requestor or a reviewer.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_event import RequestEvent
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request_event import RequestEvent
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -973,7 +973,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->list_request_events: %s\n" % e)
 ```
 ### Parameters
@@ -1099,18 +1099,18 @@ Get all access rules as an end user.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.access_rule import AccessRule
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.access_rule import AccessRule
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1119,7 +1119,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List Access Rules
         api_response = api_instance.list_user_access_rules()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->list_user_access_rules: %s\n" % e)
 ```
 ### Parameters
@@ -1182,20 +1182,20 @@ Review an access request made by a user. The reviewing user must be an approver 
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_timing import RequestTiming
-from openapi_client.model.request import Request
-from openapi_client.model.review_decision import ReviewDecision
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request_timing import RequestTiming
+from commonfate.model.review_decision import ReviewDecision
+from commonfate.model.request import Request
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1209,7 +1209,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->review_request: %s\n" % e)
 
     # example passing only optional values
@@ -1231,7 +1231,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->review_request: %s\n" % e)
 ```
 ### Parameters
@@ -1321,17 +1321,17 @@ Admins and approvers can revoke access previously approved. Effective immediatel
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
+import commonfate
+from commonfate.apis.tags import end_user_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1344,7 +1344,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         api_response = api_instance.revoke_request(
             path_params=path_params,
         )
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->revoke_request: %s\n" % e)
 ```
 ### Parameters
@@ -1465,20 +1465,20 @@ Update a favorite
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.favorite_detail import FavoriteDetail
-from openapi_client.model.request_timing import RequestTiming
-from openapi_client.model.create_request_with_sub_request import CreateRequestWithSubRequest
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.favorite_detail import FavoriteDetail
+from commonfate.model.create_request_with_sub_request import CreateRequestWithSubRequest
+from commonfate.model.request_timing import RequestTiming
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1491,7 +1491,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->update_favorite: %s\n" % e)
 
     # example passing only optional values
@@ -1520,7 +1520,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->update_favorite: %s\n" % e)
 ```
 ### Parameters
@@ -1605,20 +1605,20 @@ Create a favourite for a user
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.favorite_detail import FavoriteDetail
-from openapi_client.model.request_timing import RequestTiming
-from openapi_client.model.create_request_with_sub_request import CreateRequestWithSubRequest
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.favorite_detail import FavoriteDetail
+from commonfate.model.create_request_with_sub_request import CreateRequestWithSubRequest
+from commonfate.model.request_timing import RequestTiming
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1645,7 +1645,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_create_favorite: %s\n" % e)
 ```
 ### Parameters
@@ -1757,19 +1757,19 @@ Make a request to access something.  Users must specify an Access Rule when maki
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_timing import RequestTiming
-from openapi_client.model.create_request_with_sub_request import CreateRequestWithSubRequest
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.create_request_with_sub_request import CreateRequestWithSubRequest
+from commonfate.model.request_timing import RequestTiming
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1794,7 +1794,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         api_response = api_instance.user_create_request(
             body=body,
         )
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_create_request: %s\n" % e)
 ```
 ### Parameters
@@ -1856,18 +1856,18 @@ Get details for an Access Rule.  End users are only able to view Access Rules if
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_access_rule import RequestAccessRule
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request_access_rule import RequestAccessRule
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -1881,7 +1881,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_get_access_rule: %s\n" % e)
 ```
 ### Parameters
@@ -1987,17 +1987,17 @@ Get the approvers for an access rule.  This returns a list of user IDs.  End use
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
+import commonfate
+from commonfate.apis.tags import end_user_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2011,7 +2011,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_get_access_rule_approvers: %s\n" % e)
 ```
 ### Parameters
@@ -2137,18 +2137,18 @@ Get a favorite
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.favorite_detail import FavoriteDetail
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.favorite_detail import FavoriteDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2162,7 +2162,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_get_favorite: %s\n" % e)
 ```
 ### Parameters
@@ -2268,18 +2268,18 @@ Returns a HTTP401 response if the user is not the requestor or a reviewer.   Use
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request_detail import RequestDetail
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request_detail import RequestDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2293,7 +2293,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_get_request: %s\n" % e)
 ```
 ### Parameters
@@ -2399,18 +2399,18 @@ List favourites for a user
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.favorite import Favorite
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.favorite import Favorite
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2419,7 +2419,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # ListFavorites
         api_response = api_instance.user_list_favorites()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_list_favorites: %s\n" % e)
 ```
 ### Parameters
@@ -2503,18 +2503,18 @@ List requests. The reviewer query param allows you to fetch requests which you c
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request import Request
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request import Request
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2530,7 +2530,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_list_requests: %s\n" % e)
 ```
 ### Parameters
@@ -2631,18 +2631,18 @@ display show cancelled, expired, and revoked requests.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request import Request
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request import Request
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2656,7 +2656,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_list_requests_past: %s\n" % e)
 ```
 ### Parameters
@@ -2741,18 +2741,18 @@ display pending requests and approved requests that are currently active or sche
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import end_user_api
-from openapi_client.model.request import Request
+import commonfate
+from commonfate.apis.tags import end_user_api
+from commonfate.model.request import Request
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = end_user_api.EndUserApi(api_client)
 
@@ -2766,7 +2766,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling EndUserApi->user_list_requests_upcoming: %s\n" % e)
 ```
 ### Parameters

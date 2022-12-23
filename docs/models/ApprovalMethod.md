@@ -1,4 +1,4 @@
-# openapi_client.model.approval_method.ApprovalMethod
+# commonfate.model.approval_method.ApprovalMethod
 
 Describes whether a request has been approved automatically or from a review 
 

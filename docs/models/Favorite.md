@@ -1,4 +1,4 @@
-# openapi_client.model.favorite.Favorite
+# commonfate.model.favorite.Favorite
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# openapi_client.model.access_rule.AccessRule
+# commonfate.model.access_rule.AccessRule
 
 Access Rule contains information for an end user to make a request for access.
 

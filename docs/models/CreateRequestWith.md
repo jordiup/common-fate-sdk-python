@@ -1,4 +1,4 @@
-# openapi_client.model.create_request_with.CreateRequestWith
+# commonfate.model.create_request_with.CreateRequestWith
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.user import User
-from openapi_client import configuration
+import commonfate
+from commonfate.model.user import User
+from commonfate import configuration
 
 
 class TestUser(unittest.TestCase):

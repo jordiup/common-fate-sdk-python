@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.request_timing import RequestTiming
-from openapi_client import configuration
+import commonfate
+from commonfate.model.request_timing import RequestTiming
+from commonfate import configuration
 
 
 class TestRequestTiming(unittest.TestCase):

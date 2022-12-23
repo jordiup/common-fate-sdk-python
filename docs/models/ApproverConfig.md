@@ -1,4 +1,4 @@
-# openapi_client.model.approver_config.ApproverConfig
+# commonfate.model.approver_config.ApproverConfig
 
 Approver config for access rules
 

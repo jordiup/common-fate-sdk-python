@@ -1,4 +1,4 @@
-# openapi_client.model.provider_setup_step_details.ProviderSetupStepDetails
+# commonfate.model.provider_setup_step_details.ProviderSetupStepDetails
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

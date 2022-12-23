@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.arg_schema import ArgSchema
-from openapi_client import configuration
+import commonfate
+from commonfate.model.arg_schema import ArgSchema
+from commonfate import configuration
 
 
 class TestArgSchema(unittest.TestCase):

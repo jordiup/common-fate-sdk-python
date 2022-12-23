@@ -1,4 +1,4 @@
-# openapi_client.model.access_rule_detail.AccessRuleDetail
+# commonfate.model.access_rule_detail.AccessRuleDetail
 
 AccessRuleDetail contains detailed information about a rule and is used in administrative apis.
 

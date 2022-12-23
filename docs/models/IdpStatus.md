@@ -1,4 +1,4 @@
-# openapi_client.model.idp_status.IdpStatus
+# commonfate.model.idp_status.IdpStatus
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

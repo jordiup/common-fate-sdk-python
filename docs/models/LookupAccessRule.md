@@ -1,4 +1,4 @@
-# openapi_client.model.lookup_access_rule.LookupAccessRule
+# commonfate.model.lookup_access_rule.LookupAccessRule
 
 A matched access rule with option values if they are required for the access rule request
 

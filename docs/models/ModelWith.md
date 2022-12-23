@@ -1,4 +1,4 @@
-# openapi_client.model.model_with.ModelWith
+# commonfate.model.model_with.ModelWith
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

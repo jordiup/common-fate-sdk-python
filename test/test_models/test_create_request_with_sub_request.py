@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.create_request_with_sub_request import CreateRequestWithSubRequest
-from openapi_client import configuration
+import commonfate
+from commonfate.model.create_request_with_sub_request import CreateRequestWithSubRequest
+from commonfate import configuration
 
 
 class TestCreateRequestWithSubRequest(unittest.TestCase):

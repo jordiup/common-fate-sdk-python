@@ -1,4 +1,4 @@
-# openapi_client.model.create_request_with_sub_request.CreateRequestWithSubRequest
+# commonfate.model.create_request_with_sub_request.CreateRequestWithSubRequest
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

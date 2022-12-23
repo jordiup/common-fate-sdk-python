@@ -1,4 +1,4 @@
-# openapi_client.model.provider_setup_instructions.ProviderSetupInstructions
+# commonfate.model.provider_setup_instructions.ProviderSetupInstructions
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

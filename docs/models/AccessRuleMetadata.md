@@ -1,4 +1,4 @@
-# openapi_client.model.access_rule_metadata.AccessRuleMetadata
+# commonfate.model.access_rule_metadata.AccessRuleMetadata
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

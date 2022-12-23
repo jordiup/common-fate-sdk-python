@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import openapi_client
-from openapi_client.paths.api_v1_favorites_id import delete  # noqa: E501
-from openapi_client import configuration, schemas, api_client
+import commonfate
+from commonfate.paths.api_v1_favorites_id import delete  # noqa: E501
+from commonfate import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

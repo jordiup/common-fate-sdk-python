@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.group1 import Group1
-from openapi_client import configuration
+import commonfate
+from commonfate.model.group1 import Group1
+from commonfate import configuration
 
 
 class TestGroup1(unittest.TestCase):

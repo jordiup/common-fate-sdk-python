@@ -1,4 +1,4 @@
-# openapi_client.model.group.Group
+# commonfate.model.group.Group
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

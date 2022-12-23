@@ -1,4 +1,4 @@
-# openapi_client.model.log.Log
+# commonfate.model.log.Log
 
 A log entry.
 

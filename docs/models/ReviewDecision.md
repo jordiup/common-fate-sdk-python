@@ -1,4 +1,4 @@
-# openapi_client.model.review_decision.ReviewDecision
+# commonfate.model.review_decision.ReviewDecision
 
 A decision made on an Access Request.
 

@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.favorite_detail import FavoriteDetail
-from openapi_client import configuration
+import commonfate
+from commonfate.model.favorite_detail import FavoriteDetail
+from commonfate import configuration
 
 
 class TestFavoriteDetail(unittest.TestCase):

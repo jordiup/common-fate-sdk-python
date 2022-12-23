@@ -1,4 +1,4 @@
-# openapi_client.model.access_instructions.AccessInstructions
+# commonfate.model.access_instructions.AccessInstructions
 
 Instructions on how to access the requested resource.  The `instructions` field will be null if no instructions are available.
 

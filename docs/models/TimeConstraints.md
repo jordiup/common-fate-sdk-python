@@ -1,4 +1,4 @@
-# openapi_client.model.time_constraints.TimeConstraints
+# commonfate.model.time_constraints.TimeConstraints
 
 Time configuration for an Access Rule.
 

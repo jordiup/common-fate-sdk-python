@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.log import Log
-from openapi_client import configuration
+import commonfate
+from commonfate.model.log import Log
+from commonfate import configuration
 
 
 class TestLog(unittest.TestCase):

@@ -1,4 +1,4 @@
-# openapi_client.model.access_rule_target_detail_arguments.AccessRuleTargetDetailArguments
+# commonfate.model.access_rule_target_detail_arguments.AccessRuleTargetDetailArguments
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

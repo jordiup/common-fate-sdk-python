@@ -1,4 +1,4 @@
-# openapi_client.model.option.Option
+# commonfate.model.option.Option
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

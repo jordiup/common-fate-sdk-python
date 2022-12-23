@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.provider_config_validation import ProviderConfigValidation
-from openapi_client import configuration
+import commonfate
+from commonfate.model.provider_config_validation import ProviderConfigValidation
+from commonfate import configuration
 
 
 class TestProviderConfigValidation(unittest.TestCase):

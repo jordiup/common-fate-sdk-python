@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.provider import Provider
-from openapi_client import configuration
+import commonfate
+from commonfate.model.provider import Provider
+from commonfate import configuration
 
 
 class TestProvider(unittest.TestCase):

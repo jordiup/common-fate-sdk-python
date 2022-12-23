@@ -1,4 +1,4 @@
-# openapi_client.model.user.User
+# commonfate.model.user.User
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

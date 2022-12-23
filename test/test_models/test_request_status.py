@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.request_status import RequestStatus
-from openapi_client import configuration
+import commonfate
+from commonfate.model.request_status import RequestStatus
+from commonfate import configuration
 
 
 class TestRequestStatus(unittest.TestCase):

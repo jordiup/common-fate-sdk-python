@@ -1,4 +1,4 @@
-# openapi_client.model.provider_config_validation.ProviderConfigValidation
+# commonfate.model.provider_config_validation.ProviderConfigValidation
 
 A validation against the configuration values of the Access Provider.
 

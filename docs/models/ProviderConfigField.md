@@ -1,4 +1,4 @@
-# openapi_client.model.provider_config_field.ProviderConfigField
+# commonfate.model.provider_config_field.ProviderConfigField
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

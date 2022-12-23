@@ -1,4 +1,4 @@
-# openapi_client.model.request_argument.RequestArgument
+# commonfate.model.request_argument.RequestArgument
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

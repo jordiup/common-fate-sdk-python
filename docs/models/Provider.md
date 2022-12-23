@@ -1,4 +1,4 @@
-# openapi_client.model.provider.Provider
+# commonfate.model.provider.Provider
 
 Provider 
 

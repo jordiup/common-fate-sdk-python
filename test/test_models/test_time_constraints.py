@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.time_constraints import TimeConstraints
-from openapi_client import configuration
+import commonfate
+from commonfate.model.time_constraints import TimeConstraints
+from commonfate import configuration
 
 
 class TestTimeConstraints(unittest.TestCase):

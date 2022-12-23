@@ -1,4 +1,4 @@
-# openapi_client.model.create_access_rule_target.CreateAccessRuleTarget
+# commonfate.model.create_access_rule_target.CreateAccessRuleTarget
 
 a request body for creating a Access Rule Target
 

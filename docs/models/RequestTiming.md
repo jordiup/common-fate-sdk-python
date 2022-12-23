@@ -1,4 +1,4 @@
-# openapi_client.model.request_timing.RequestTiming
+# commonfate.model.request_timing.RequestTiming
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

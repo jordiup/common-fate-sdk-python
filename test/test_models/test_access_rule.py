@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.access_rule import AccessRule
-from openapi_client import configuration
+import commonfate
+from commonfate.model.access_rule import AccessRule
+from commonfate import configuration
 
 
 class TestAccessRule(unittest.TestCase):

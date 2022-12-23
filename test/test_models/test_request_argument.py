@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.request_argument import RequestArgument
-from openapi_client import configuration
+import commonfate
+from commonfate.model.request_argument import RequestArgument
+from commonfate import configuration
 
 
 class TestRequestArgument(unittest.TestCase):

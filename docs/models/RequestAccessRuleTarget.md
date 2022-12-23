@@ -1,4 +1,4 @@
-# openapi_client.model.request_access_rule_target.RequestAccessRuleTarget
+# commonfate.model.request_access_rule_target.RequestAccessRuleTarget
 
 A detailed target for an access rule request
 

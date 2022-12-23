@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.lookup_access_rule import LookupAccessRule
-from openapi_client import configuration
+import commonfate
+from commonfate.model.lookup_access_rule import LookupAccessRule
+from commonfate import configuration
 
 
 class TestLookupAccessRule(unittest.TestCase):

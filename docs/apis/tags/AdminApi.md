@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# openapi_client.apis.tags.admin_api.AdminApi
+# commonfate.apis.tags.admin_api.AdminApi
 
 All URIs are relative to *http://localhost:8080*
 
@@ -48,18 +48,18 @@ Marks an access rule as archived. Any pending requests for this access rule will
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.access_rule_detail import AccessRuleDetail
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -73,7 +73,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_archive_access_rule: %s\n" % e)
 ```
 ### Parameters
@@ -200,21 +200,21 @@ Create an access rule
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.time_constraints import TimeConstraints
-from openapi_client.model.approver_config import ApproverConfig
-from openapi_client.model.access_rule_detail import AccessRuleDetail
-from openapi_client.model.create_access_rule_target import CreateAccessRuleTarget
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
+from commonfate.model.time_constraints import TimeConstraints
+from commonfate.model.approver_config import ApproverConfig
+from commonfate.model.create_access_rule_target import CreateAccessRuleTarget
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -254,7 +254,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_create_access_rule: %s\n" % e)
 ```
 ### Parameters
@@ -381,17 +381,17 @@ Delete an internal group
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
+import commonfate
+from commonfate.apis.tags import admin_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -404,7 +404,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         api_response = api_instance.admin_delete_group(
             path_params=path_params,
         )
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_delete_group: %s\n" % e)
 ```
 ### Parameters
@@ -504,18 +504,18 @@ Get an Access Rule.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.access_rule_detail import AccessRuleDetail
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -529,7 +529,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_get_access_rule: %s\n" % e)
 ```
 ### Parameters
@@ -635,18 +635,18 @@ Returns a specific version for an Access Rule.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.access_rule_detail import AccessRuleDetail
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -661,7 +661,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_get_access_rule_version: %s\n" % e)
 ```
 ### Parameters
@@ -775,18 +775,18 @@ Returns a version history for a particular Access Rule.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.access_rule_detail import AccessRuleDetail
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -800,7 +800,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_get_access_rule_versions: %s\n" % e)
 ```
 ### Parameters
@@ -900,17 +900,17 @@ Returns the version information
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
+import commonfate
+from commonfate.apis.tags import admin_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -919,7 +919,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get deployment version details
         api_response = api_instance.admin_get_deployment_version()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_get_deployment_version: %s\n" % e)
 ```
 ### Parameters
@@ -969,18 +969,18 @@ List all access rules
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.access_rule_detail import AccessRuleDetail
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -995,7 +995,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_list_access_rules: %s\n" % e)
 ```
 ### Parameters
@@ -1088,18 +1088,18 @@ Return a list of all requests
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.request import Request
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.request import Request
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1114,7 +1114,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_list_requests: %s\n" % e)
 ```
 ### Parameters
@@ -1207,21 +1207,21 @@ Updates an Access Rule. Updating a rule creates a new version.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.time_constraints import TimeConstraints
-from openapi_client.model.approver_config import ApproverConfig
-from openapi_client.model.access_rule_detail import AccessRuleDetail
-from openapi_client.model.create_access_rule_target import CreateAccessRuleTarget
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.access_rule_detail import AccessRuleDetail
+from commonfate.model.time_constraints import TimeConstraints
+from commonfate.model.approver_config import ApproverConfig
+from commonfate.model.create_access_rule_target import CreateAccessRuleTarget
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1235,7 +1235,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_update_access_rule: %s\n" % e)
 
     # example passing only optional values
@@ -1278,7 +1278,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_update_access_rule: %s\n" % e)
 ```
 ### Parameters
@@ -1410,18 +1410,18 @@ Update a group
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.group import Group
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.group import Group
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1435,7 +1435,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_update_group: %s\n" % e)
 
     # example passing only optional values
@@ -1456,7 +1456,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->admin_update_group: %s\n" % e)
 ```
 ### Parameters
@@ -1593,17 +1593,17 @@ If Runtime Configuration is enabled, this will write the Access Provider to the 
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
+import commonfate
+from commonfate.apis.tags import admin_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1617,7 +1617,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->complete_providersetup: %s\n" % e)
 ```
 ### Parameters
@@ -1688,18 +1688,18 @@ Create new group in the Cognito user pool if it is enabled.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.group import Group
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.group import Group
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1717,7 +1717,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->create_group: %s\n" % e)
 ```
 ### Parameters
@@ -1860,18 +1860,18 @@ Begins the guided setup process for a new Access Provider.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -1885,7 +1885,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->create_providersetup: %s\n" % e)
 ```
 ### Parameters
@@ -1972,18 +1972,18 @@ Create new user in the Cognito user pool if it is enabled.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.user import User
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2000,7 +2000,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->create_user: %s\n" % e)
 ```
 ### Parameters
@@ -2132,18 +2132,18 @@ Removes an in-progress provider setup and deletes all data relating to it.  Retu
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2157,7 +2157,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->delete_providersetup: %s\n" % e)
 ```
 ### Parameters
@@ -2221,18 +2221,18 @@ Returns information for a group.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.group import Group
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.group import Group
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2246,7 +2246,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_group: %s\n" % e)
 ```
 ### Parameters
@@ -2310,18 +2310,18 @@ Get provider by id
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider import Provider
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider import Provider
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2335,7 +2335,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_provider: %s\n" % e)
 ```
 ### Parameters
@@ -2441,18 +2441,18 @@ gets the argSchema describing the args for this provider
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.arg_schema import ArgSchema
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.arg_schema import ArgSchema
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2466,7 +2466,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_provider_args: %s\n" % e)
 ```
 ### Parameters
@@ -2572,18 +2572,18 @@ Get the setup instructions for an Access Provider.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2597,7 +2597,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_providersetup: %s\n" % e)
 ```
 ### Parameters
@@ -2661,18 +2661,18 @@ Get the setup instructions for an Access Provider.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup_instructions import ProviderSetupInstructions
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup_instructions import ProviderSetupInstructions
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2686,7 +2686,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_providersetup_instructions: %s\n" % e)
 ```
 ### Parameters
@@ -2750,18 +2750,18 @@ Fetch a list of users
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.user import User
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2775,7 +2775,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->get_users: %s\n" % e)
 ```
 ### Parameters
@@ -2860,17 +2860,17 @@ Get information about the identity configuration
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
+import commonfate
+from commonfate.apis.tags import admin_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2879,7 +2879,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get identity configuration
         api_response = api_instance.identity_configuration()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->identity_configuration: %s\n" % e)
 ```
 ### Parameters
@@ -2972,17 +2972,17 @@ Run the identity sync operation on demand
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
+import commonfate
+from commonfate.apis.tags import admin_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -2990,7 +2990,7 @@ with openapi_client.ApiClient(configuration) as api_client:
     try:
         # Sync Identity
         api_response = api_instance.identity_sync()
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->identity_sync: %s\n" % e)
 ```
 ### Parameters
@@ -3069,18 +3069,18 @@ Lists all active groups
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.group import Group
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.group import Group
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3095,7 +3095,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->list_groups: %s\n" % e)
 ```
 ### Parameters
@@ -3188,19 +3188,19 @@ Returns the options for a particular Access Provider argument. The options may b
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.groups import Groups
-from openapi_client.model.option import Option
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.option import Option
+from commonfate.model.groups import Groups
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3218,7 +3218,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->list_provider_arg_options: %s\n" % e)
 
     # example passing only optional values
@@ -3236,7 +3236,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->list_provider_arg_options: %s\n" % e)
 ```
 ### Parameters
@@ -3388,18 +3388,18 @@ List providers
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider import Provider
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider import Provider
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3408,7 +3408,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List providers
         api_response = api_instance.list_providers()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->list_providers: %s\n" % e)
 ```
 ### Parameters
@@ -3499,18 +3499,18 @@ List providers which are still in the process of being set up.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3519,7 +3519,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List the provider setups in progress
         api_response = api_instance.list_providersetups()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->list_providersetups: %s\n" % e)
 ```
 ### Parameters
@@ -3581,18 +3581,18 @@ The updated provider setup.
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3607,7 +3607,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->submit_providersetup_step: %s\n" % e)
 
     # example passing only optional values
@@ -3628,7 +3628,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->submit_providersetup_step: %s\n" % e)
 ```
 ### Parameters
@@ -3732,18 +3732,18 @@ Update a user including group membership
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.user import User
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3757,7 +3757,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->update_user: %s\n" % e)
 
     # example passing only optional values
@@ -3776,7 +3776,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->update_user: %s\n" % e)
 ```
 ### Parameters
@@ -3932,18 +3932,18 @@ Validates the configuration values for an access provider being setup.  Will ret
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import admin_api
-from openapi_client.model.provider_setup import ProviderSetup
+import commonfate
+from commonfate.apis.tags import admin_api
+from commonfate.model.provider_setup import ProviderSetup
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = commonfate.Configuration(
     host = "http://localhost:8080"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with commonfate.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -3957,7 +3957,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except commonfate.ApiException as e:
         print("Exception when calling AdminApi->validate_providersetup: %s\n" % e)
 ```
 ### Parameters

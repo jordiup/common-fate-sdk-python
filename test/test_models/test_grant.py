@@ -11,9 +11,9 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.model.grant import Grant
-from openapi_client import configuration
+import commonfate
+from commonfate.model.grant import Grant
+from commonfate import configuration
 
 
 class TestGrant(unittest.TestCase):

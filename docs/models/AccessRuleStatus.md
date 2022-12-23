@@ -1,4 +1,4 @@
-# openapi_client.model.access_rule_status.AccessRuleStatus
+# commonfate.model.access_rule_status.AccessRuleStatus
 
 The status of an Access Rule.
 

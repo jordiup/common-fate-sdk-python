@@ -1,4 +1,4 @@
-# openapi_client.model.provider_setup_step_overview.ProviderSetupStepOverview
+# commonfate.model.provider_setup_step_overview.ProviderSetupStepOverview
 
 Indicates whether a setup step is complete or not.
 

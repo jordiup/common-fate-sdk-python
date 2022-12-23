@@ -1,4 +1,4 @@
-# openapi_client.model.request.Request
+# commonfate.model.request.Request
 
 A request to access something made by an end user in Common Fate.
 

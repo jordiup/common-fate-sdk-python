@@ -1,4 +1,4 @@
-# openapi_client.model.provider_setup.ProviderSetup
+# commonfate.model.provider_setup.ProviderSetup
 
 A provider in the process of being set up through the guided setup workflow in Common Fate. These providers are **not** yet active.
 
