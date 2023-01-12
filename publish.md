@@ -9,7 +9,7 @@ Once you have an account, you will need to create an API token
 
 https://pypi.org/manage/account/
 
-Once you have the API token, you will need to add it to Github Actions as a secret
+Once you have the API token, you will need to add it to Github Actions as a secret named `PYPI_API_TOKEN`
 
 # Creating a release
 
