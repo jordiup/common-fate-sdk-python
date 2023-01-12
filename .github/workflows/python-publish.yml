@@ -39,5 +39,3 @@ jobs:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
           verbose: true
-          # also set the version to the tag name
-          version: ${{ github.ref }}
