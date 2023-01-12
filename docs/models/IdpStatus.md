@@ -1,4 +1,4 @@
-# commonfate.model.idp_status.IdpStatus
+# jhc_cf_sdk_test.model.idp_status.IdpStatus
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# commonfate.model.time_constraints.TimeConstraints
+# jhc_cf_sdk_test.model.time_constraints.TimeConstraints
 
 Time configuration for an Access Rule.
 

@@ -1,4 +1,4 @@
-# commonfate.model.provider_setup_step_overview.ProviderSetupStepOverview
+# jhc_cf_sdk_test.model.provider_setup_step_overview.ProviderSetupStepOverview
 
 Indicates whether a setup step is complete or not.
 

@@ -1,4 +1,4 @@
-# commonfate.model.arg_schema.ArgSchema
+# jhc_cf_sdk_test.model.arg_schema.ArgSchema
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# commonfate.model.approval_method.ApprovalMethod
+# jhc_cf_sdk_test.model.approval_method.ApprovalMethod
 
 Describes whether a request has been approved automatically or from a review 
 

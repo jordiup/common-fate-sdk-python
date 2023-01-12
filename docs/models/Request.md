@@ -1,4 +1,4 @@
-# commonfate.model.request.Request
+# jhc_cf_sdk_test.model.request.Request
 
 A request to access something made by an end user in Common Fate.
 

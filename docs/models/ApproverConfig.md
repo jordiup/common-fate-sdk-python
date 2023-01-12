@@ -1,4 +1,4 @@
-# commonfate.model.approver_config.ApproverConfig
+# jhc_cf_sdk_test.model.approver_config.ApproverConfig
 
 Approver config for access rules
 

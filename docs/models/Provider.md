@@ -1,4 +1,4 @@
-# commonfate.model.provider.Provider
+# jhc_cf_sdk_test.model.provider.Provider
 
 Provider 
 

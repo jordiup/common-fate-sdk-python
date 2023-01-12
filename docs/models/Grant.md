@@ -1,4 +1,4 @@
-# commonfate.model.grant.Grant
+# jhc_cf_sdk_test.model.grant.Grant
 
 A temporary assignment of a user to a principal.
 

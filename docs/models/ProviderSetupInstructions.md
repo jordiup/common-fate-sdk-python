@@ -1,4 +1,4 @@
-# commonfate.model.provider_setup_instructions.ProviderSetupInstructions
+# jhc_cf_sdk_test.model.provider_setup_instructions.ProviderSetupInstructions
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# commonfate.model.access_rule_target_detail_arguments.AccessRuleTargetDetailArguments
+# jhc_cf_sdk_test.model.access_rule_target_detail_arguments.AccessRuleTargetDetailArguments
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

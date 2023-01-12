@@ -1,4 +1,4 @@
-# commonfate.model.create_access_rule_target.CreateAccessRuleTarget
+# jhc_cf_sdk_test.model.create_access_rule_target.CreateAccessRuleTarget
 
 a request body for creating a Access Rule Target
 

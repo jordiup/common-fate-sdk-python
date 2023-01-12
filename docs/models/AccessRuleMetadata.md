@@ -1,4 +1,4 @@
-# commonfate.model.access_rule_metadata.AccessRuleMetadata
+# jhc_cf_sdk_test.model.access_rule_metadata.AccessRuleMetadata
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

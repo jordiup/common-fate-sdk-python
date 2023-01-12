@@ -1,4 +1,4 @@
-# commonfate.model.favorite.Favorite
+# jhc_cf_sdk_test.model.favorite.Favorite
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# commonfate.model.option.Option
+# jhc_cf_sdk_test.model.option.Option
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

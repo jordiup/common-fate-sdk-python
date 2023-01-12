@@ -1,4 +1,4 @@
-# commonfate.model.create_request_with_sub_request.CreateRequestWithSubRequest
+# jhc_cf_sdk_test.model.create_request_with_sub_request.CreateRequestWithSubRequest
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

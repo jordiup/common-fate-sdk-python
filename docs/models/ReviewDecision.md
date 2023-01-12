@@ -1,4 +1,4 @@
-# commonfate.model.review_decision.ReviewDecision
+# jhc_cf_sdk_test.model.review_decision.ReviewDecision
 
 A decision made on an Access Request.
 

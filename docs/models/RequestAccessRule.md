@@ -1,4 +1,4 @@
-# commonfate.model.request_access_rule.RequestAccessRule
+# jhc_cf_sdk_test.model.request_access_rule.RequestAccessRule
 
 Access Rule contains information for an end user to make a request for access.
 

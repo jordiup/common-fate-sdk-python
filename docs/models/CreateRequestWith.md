@@ -1,4 +1,4 @@
-# commonfate.model.create_request_with.CreateRequestWith
+# jhc_cf_sdk_test.model.create_request_with.CreateRequestWith
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

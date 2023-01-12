@@ -11,8 +11,8 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "jhc_cf_sdk_test"
-VERSION = "1.2.3"
+NAME = "jhc-cf-sdk-test"
+VERSION = "1.0.0"
 # To install the library, run the following
 #
 # python setup.py install
@@ -39,7 +39,7 @@ setup(
     keywords=["OpenAPI", "OpenAPI-Generator", "Common Fate"],
     python_requires=">=3.7",
     install_requires=REQUIRES,
-    packages=find_packages(exclude=["test", "tests","commonfate" ]),
+    packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description="""\
     Common Fate API  # noqa: E501

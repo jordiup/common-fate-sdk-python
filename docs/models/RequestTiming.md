@@ -1,4 +1,4 @@
-# commonfate.model.request_timing.RequestTiming
+# jhc_cf_sdk_test.model.request_timing.RequestTiming
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

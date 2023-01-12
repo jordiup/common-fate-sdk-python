@@ -1,4 +1,4 @@
-# commonfate.model.access_rule_detail.AccessRuleDetail
+# jhc_cf_sdk_test.model.access_rule_detail.AccessRuleDetail
 
 AccessRuleDetail contains detailed information about a rule and is used in administrative apis.
 

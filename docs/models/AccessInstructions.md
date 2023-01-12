@@ -1,4 +1,4 @@
-# commonfate.model.access_instructions.AccessInstructions
+# jhc_cf_sdk_test.model.access_instructions.AccessInstructions
 
 Instructions on how to access the requested resource.  The `instructions` field will be null if no instructions are available.
 

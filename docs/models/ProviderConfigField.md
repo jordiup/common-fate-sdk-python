@@ -1,4 +1,4 @@
-# commonfate.model.provider_config_field.ProviderConfigField
+# jhc_cf_sdk_test.model.provider_config_field.ProviderConfigField
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

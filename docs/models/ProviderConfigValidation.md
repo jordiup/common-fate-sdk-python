@@ -1,4 +1,4 @@
-# commonfate.model.provider_config_validation.ProviderConfigValidation
+# jhc_cf_sdk_test.model.provider_config_validation.ProviderConfigValidation
 
 A validation against the configuration values of the Access Provider.
 

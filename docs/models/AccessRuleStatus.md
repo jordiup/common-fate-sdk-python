@@ -1,4 +1,4 @@
-# commonfate.model.access_rule_status.AccessRuleStatus
+# jhc_cf_sdk_test.model.access_rule_status.AccessRuleStatus
 
 The status of an Access Rule.
 

@@ -1,4 +1,4 @@
-# commonfate.model.log.Log
+# jhc_cf_sdk_test.model.log.Log
 
 A log entry.
 

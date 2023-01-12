@@ -1,4 +1,4 @@
-# commonfate.model.access_rule_target_detail.AccessRuleTargetDetail
+# jhc_cf_sdk_test.model.access_rule_target_detail.AccessRuleTargetDetail
 
 A detailed target for an access rule
 

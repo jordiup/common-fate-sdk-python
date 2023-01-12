@@ -1,4 +1,4 @@
-# commonfate.model.user.User
+# jhc_cf_sdk_test.model.user.User
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

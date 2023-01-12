@@ -1,4 +1,4 @@
-# commonfate.model.request_status.RequestStatus
+# jhc_cf_sdk_test.model.request_status.RequestStatus
 
 The status of an Access Request. 
 

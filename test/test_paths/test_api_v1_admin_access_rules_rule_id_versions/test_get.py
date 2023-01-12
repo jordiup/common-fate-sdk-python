@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import commonfate
-from commonfate.paths.api_v1_admin_access_rules_rule_id_versions import get  # noqa: E501
-from commonfate import configuration, schemas, api_client
+import jhc_cf_sdk_test
+from jhc_cf_sdk_test.paths.api_v1_admin_access_rules_rule_id_versions import get  # noqa: E501
+from jhc_cf_sdk_test import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

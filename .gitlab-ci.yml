@@ -8,7 +8,7 @@ stages:
   script:
    - pip install -r requirements.txt
    - pip install -r test-requirements.txt
-   - pytest --cov=commonfate
+   - pytest --cov=jhc_cf_sdk_test
 
 test-3.5:
   extends: .tests

@@ -1,4 +1,4 @@
-# commonfate.model.argument.Argument
+# jhc_cf_sdk_test.model.argument.Argument
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# commonfate.model.key_value.KeyValue
+# jhc_cf_sdk_test.model.key_value.KeyValue
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

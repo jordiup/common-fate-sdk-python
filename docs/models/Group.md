@@ -1,4 +1,4 @@
-# commonfate.model.group.Group
+# jhc_cf_sdk_test.model.group.Group
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
