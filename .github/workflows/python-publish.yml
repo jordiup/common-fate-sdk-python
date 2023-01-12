@@ -9,8 +9,11 @@
 name: Upload Python Package
 
 on:
-  release:
-    types: [published]
+  push:
+    paths:
+      - 'release-versions/*'
+  # release:
+  #   types: [published]
   # push:
   #   branches: [main]
 
@@ -40,3 +43,4 @@ jobs:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
           verbose: true
+          version: ${{ github.event.release.tag_name }}
