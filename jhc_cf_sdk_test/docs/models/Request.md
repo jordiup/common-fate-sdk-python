@@ -1,11 +1,11 @@
 # jhc_cf_sdk_test.model.request.Request
 
-A request to access something made by an end user in Granted.
+A request to access something made by an end user in Common Fate.
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-dict, frozendict.frozendict,  | frozendict.frozendict,  | A request to access something made by an end user in Granted. | 
+dict, frozendict.frozendict,  | frozendict.frozendict,  | A request to access something made by an end user in Common Fate. | 
 
 ### Dictionary Keys
 Key | Input Type | Accessed Type | Description | Notes
