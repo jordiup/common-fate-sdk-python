@@ -593,7 +593,7 @@ dict, frozendict.frozendict,  | frozendict.frozendict,  |  |
 ### Dictionary Keys
 Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
-**isAdmin** | bool,  | BoolClass,  | Whether the user is an administrator of Granted. | 
+**isAdmin** | bool,  | BoolClass,  | Whether the user is an administrator of Common Fate. | 
 **user** | [**User**]({{complexTypePrefix}}User.md) | [**User**]({{complexTypePrefix}}User.md) |  | 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
@@ -616,7 +616,7 @@ No authorization required
 
 Get a user
 
-Returns a Granted user.
+Returns a Common Fate user.
 
 ### Example
 
@@ -1618,7 +1618,7 @@ No authorization required
 
 Get a request
 
-Returns a HTTP401 response if the user is not the requestor or a reviewer.   Use /api/v1/admin/requests/{requestId} as an administrator to view information for requests not made by the current user (note: requires that the user is a Granted administrator).
+Returns a HTTP401 response if the user is not the requestor or a reviewer.   Use /api/v1/admin/requests/{requestId} as an administrator to view information for requests not made by the current user (note: requires that the user is a Common Fate administrator).
 
 ### Example
 
