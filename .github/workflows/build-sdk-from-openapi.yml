@@ -48,7 +48,7 @@ jobs:
         run: |
           rm -rf ${{ env.pkg_name }}
           mkdir ${{ env.pkg_name }}
-          mv python-client ${{ env.pkg_name }}
+          cp python-client ${{ env.pkg_name }}
           rm -rf ci-temp python-client
       - name: Commit changes
         run: |
