@@ -25,17 +25,20 @@ jobs:
         run: |
           echo $(cat release-versions/tags-latest.txt)
           echo "::set-output name=version::$(cat release-versions/tags-latest.txt)"
-
-      # https://github.com/marketplace/actions/generate-client-library-w-the-openapitools-generator
+      - name: Clone OpenAPI
+        run: |
+          mkdir ci-temp
+          cd ci-temp
+          curl -sL https://raw.githubusercontent.com/common-fate/common-fate/${{ steps.get_version.outputs.version }}/openapi.yml > openapi.yml      # https://github.com/marketplace/actions/generate-client-library-w-the-openapitools-generator
       - name: Install OpenAPI Generator
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: python
           # config-file: openapi-generator-config.json
-          # openapi-file: ci-temp/openapi.yml
+          openapi-file: ci-temp/openapi.yml
           command-args: --package-name=jhc_cf_sdk_test
           # alternatively may use:
-          openapi-url: https://raw.githubusercontent.com/common-fate/common-fate/${{ steps.get_version.outputs.version }}/openapi.yml
+          # openapi-url: https://raw.githubusercontent.com/common-fate/common-fate/${{ steps.get_version.outputs.version }}/openapi.yml
       - name: Build SDK
         run: |
           make generate-on-ci
