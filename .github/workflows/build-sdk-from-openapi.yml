@@ -32,6 +32,7 @@ jobs:
           mkdir accesshandler
           curl -sL https://raw.githubusercontent.com/common-fate/common-fate/${{ steps.get_version.outputs.version }}/openapi.yml > openapi.yml      # https://github.com/marketplace/actions/generate-client-library-w-the-openapitools-generator
           curl -sL https://raw.githubusercontent.com/common-fate/common-fate/${{ steps.get_version.outputs.version }}/accesshandler/openapi.yml > ./accesshandler/openapi.yml
+          _JAVA_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED"
       - name: Install OpenAPI Generator
         uses: openapi-generators/openapitools-generator-action@v1
         with:
