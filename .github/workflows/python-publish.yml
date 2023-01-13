@@ -6,16 +6,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package
+name: Build/Upload Python Package
 
 on:
   push:
     paths:
       - 'release-versions/*'
-  # release:
-  #   types: [published]
-  # push:
-  #   branches: [main]
 
 permissions:
   contents: read
@@ -23,6 +19,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    name: Upload Python Package to PyPI
 
     steps:
       - uses: actions/checkout@v3
