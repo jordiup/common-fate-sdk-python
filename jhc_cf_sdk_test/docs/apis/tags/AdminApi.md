@@ -1389,7 +1389,7 @@ dict, frozendict.frozendict,  | frozendict.frozendict,  |  |
 ### Dictionary Keys
 Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
-**deploymentConfigUpdateRequired** | bool,  | BoolClass,  | Whether a manual update is required to the Common Fate deployment configuration (&#x60;deployment.yml&#x60;) to activate the provider. | 
+**deploymentConfigUpdateRequired** | bool,  | BoolClass,  | Whether a manual update is required to the Granted Approvals deployment configuration (&#x60;granted-deployment.yml&#x60;) to activate the provider. | 
 **any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
 
 ### Authorization
@@ -3050,7 +3050,7 @@ This endpoint does not need any parameter.
 Code | Class | Description
 ------------- | ------------- | -------------
 n/a | api_client.ApiResponseWithoutDeserialization | When skip_deserialization is True this response is returned
-200 | [ApiResponseFor200](#list_providersetups.ApiResponseFor200) | A list of in-progress Access Providers being set up by the Common Fate administrators.
+200 | [ApiResponseFor200](#list_providersetups.ApiResponseFor200) | A list of in-progress Access Providers being set up by the Granted administrators.
 
 #### list_providersetups.ApiResponseFor200
 Name | Type | Description  | Notes

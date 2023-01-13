@@ -1,17 +1,17 @@
 # jhc_cf_sdk_test.model.provider_setup.ProviderSetup
 
-A provider in the process of being set up through the guided setup workflow in Common Fate. These providers are **not** yet active.
+A provider in the process of being set up through the guided setup workflow in Granted. These providers are **not** yet active.
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-dict, frozendict.frozendict,  | frozendict.frozendict,  | A provider in the process of being set up through the guided setup workflow in Common Fate. These providers are **not** yet active. | 
+dict, frozendict.frozendict,  | frozendict.frozendict,  | A provider in the process of being set up through the guided setup workflow in Granted. These providers are **not** yet active. | 
 
 ### Dictionary Keys
 Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **[configValues](#configValues)** | dict, frozendict.frozendict,  | frozendict.frozendict,  | The current configuration values. | 
-**id** | str,  | str,  | A unique ID for the provider setup. This is a random KSUID to avoid potential conflicts with user-specified provider IDs in the &#x60;deployment.yml&#x60; file. | 
+**id** | str,  | str,  | A unique ID for the provider setup. This is a random KSUID to avoid potential conflicts with user-specified provider IDs in the &#x60;granted-deployment.yml&#x60; file. | 
 **type** | str,  | str,  | The type of the Access Provider being set up. | 
 **[configValidation](#configValidation)** | list, tuple,  | tuple,  |  | 
 **[steps](#steps)** | list, tuple,  | tuple,  | An overview of the steps indicating whether they are complete. | 

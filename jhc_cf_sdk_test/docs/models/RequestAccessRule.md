@@ -11,7 +11,6 @@ dict, frozendict.frozendict,  | frozendict.frozendict,  | Access Rule contains i
 Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **timeConstraints** | [**TimeConstraints**](TimeConstraints.md) | [**TimeConstraints**](TimeConstraints.md) |  | 
-**canRequest** | bool,  | BoolClass,  |  | 
 **isCurrent** | bool,  | BoolClass,  |  | 
 **name** | str,  | str,  |  | 
 **description** | str,  | str,  |  | 
