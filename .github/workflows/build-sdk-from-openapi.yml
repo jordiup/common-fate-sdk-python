@@ -13,6 +13,10 @@ on:
 # - run the generate-on-ci command
 # - commit the changes to the repo
 
+# intialise some vars for re-use
+env:
+  pkg_name: jhc_cf_sdk_test
+
 jobs:
   clone-openapi:
     runs-on: ubuntu-latest
@@ -39,10 +43,13 @@ jobs:
           generator: python
           # config-file: openapi-generator-config.json
           openapi-file: ci-temp/openapi.yml
-          command-args: --package-name=jhc_cf_sdk_test --skip-validate-spec
+          command-args: --package-name=${{ env.pkg_name }}  --skip-validate-spec
       - name: Cleanup
         run: |
-          rm -rf ci-temp
+          rm -rf ${{ env.pkg_name }}
+          mkdir ${{ env.pkg_name }}
+          mv python-client ${{ env.pkg_name }}
+          rm -rf ci-temp python-client
       - name: Commit changes
         run: |
           git config --global user.name 'Your Name'
