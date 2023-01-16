@@ -12,7 +12,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "jhc_cf_sdk_test"
-VERSION = "v0.11.1"
+VERSION = "v0.12.0"
 # To install the library, run the following
 #
 # python setup.py install

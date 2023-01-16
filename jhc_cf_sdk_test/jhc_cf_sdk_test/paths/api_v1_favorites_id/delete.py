@@ -71,7 +71,7 @@ _status_code_to_response = {
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _delete_favorite_oapg(
+    def _user_delete_favorite_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
@@ -82,7 +82,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _delete_favorite_oapg(
+    def _user_delete_favorite_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -91,7 +91,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _delete_favorite_oapg(
+    def _user_delete_favorite_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
@@ -102,7 +102,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _delete_favorite_oapg(
+    def _user_delete_favorite_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
@@ -157,11 +157,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class DeleteFavorite(BaseApi):
+class UserDeleteFavorite(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def delete_favorite(
+    def user_delete_favorite(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
@@ -172,7 +172,7 @@ class DeleteFavorite(BaseApi):
     ]: ...
 
     @typing.overload
-    def delete_favorite(
+    def user_delete_favorite(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -181,7 +181,7 @@ class DeleteFavorite(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def delete_favorite(
+    def user_delete_favorite(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
@@ -192,14 +192,14 @@ class DeleteFavorite(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def delete_favorite(
+    def user_delete_favorite(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._delete_favorite_oapg(
+        return self._user_delete_favorite_oapg(
             path_params=path_params,
             stream=stream,
             timeout=timeout,
@@ -249,7 +249,7 @@ class ApiFordelete(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._delete_favorite_oapg(
+        return self._user_delete_favorite_oapg(
             path_params=path_params,
             stream=stream,
             timeout=timeout,

@@ -189,7 +189,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _get_users_oapg(
+    def _admin_list_users_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -201,7 +201,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _get_users_oapg(
+    def _admin_list_users_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -211,7 +211,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _get_users_oapg(
+    def _admin_list_users_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -223,7 +223,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _get_users_oapg(
+    def _admin_list_users_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -286,11 +286,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class GetUsers(BaseApi):
+class AdminListUsers(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def get_users(
+    def admin_list_users(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -302,7 +302,7 @@ class GetUsers(BaseApi):
     ]: ...
 
     @typing.overload
-    def get_users(
+    def admin_list_users(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -312,7 +312,7 @@ class GetUsers(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def get_users(
+    def admin_list_users(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -324,7 +324,7 @@ class GetUsers(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def get_users(
+    def admin_list_users(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -332,7 +332,7 @@ class GetUsers(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_users_oapg(
+        return self._admin_list_users_oapg(
             query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -387,7 +387,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_users_oapg(
+        return self._admin_list_users_oapg(
             query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,

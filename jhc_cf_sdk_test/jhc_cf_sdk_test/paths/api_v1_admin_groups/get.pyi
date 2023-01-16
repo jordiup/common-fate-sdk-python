@@ -210,7 +210,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _list_groups_oapg(
+    def _admin_list_groups_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -222,7 +222,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _list_groups_oapg(
+    def _admin_list_groups_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -232,7 +232,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _list_groups_oapg(
+    def _admin_list_groups_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -244,7 +244,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _list_groups_oapg(
+    def _admin_list_groups_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -308,11 +308,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class ListGroups(BaseApi):
+class AdminListGroups(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def list_groups(
+    def admin_list_groups(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -324,7 +324,7 @@ class ListGroups(BaseApi):
     ]: ...
 
     @typing.overload
-    def list_groups(
+    def admin_list_groups(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -334,7 +334,7 @@ class ListGroups(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def list_groups(
+    def admin_list_groups(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -346,7 +346,7 @@ class ListGroups(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def list_groups(
+    def admin_list_groups(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -354,7 +354,7 @@ class ListGroups(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_groups_oapg(
+        return self._admin_list_groups_oapg(
             query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -409,7 +409,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_groups_oapg(
+        return self._admin_list_groups_oapg(
             query_params=query_params,
             accept_content_types=accept_content_types,
             stream=stream,

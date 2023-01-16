@@ -30,6 +30,8 @@ class FavoriteDetail(
     Ref: https://openapi-generator.tech
 
     Do not edit the class manually.
+
+    Detailed object for a Favorite. 
     """
 
 

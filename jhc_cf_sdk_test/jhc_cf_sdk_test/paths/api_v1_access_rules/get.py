@@ -168,7 +168,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _list_user_access_rules_oapg(
+    def _user_list_access_rules_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -179,7 +179,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _list_user_access_rules_oapg(
+    def _user_list_access_rules_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -188,7 +188,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _list_user_access_rules_oapg(
+    def _user_list_access_rules_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -199,7 +199,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _list_user_access_rules_oapg(
+    def _user_list_access_rules_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -247,11 +247,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class ListUserAccessRules(BaseApi):
+class UserListAccessRules(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def list_user_access_rules(
+    def user_list_access_rules(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -262,7 +262,7 @@ class ListUserAccessRules(BaseApi):
     ]: ...
 
     @typing.overload
-    def list_user_access_rules(
+    def user_list_access_rules(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -271,7 +271,7 @@ class ListUserAccessRules(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def list_user_access_rules(
+    def user_list_access_rules(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -282,14 +282,14 @@ class ListUserAccessRules(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def list_user_access_rules(
+    def user_list_access_rules(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_user_access_rules_oapg(
+        return self._user_list_access_rules_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
@@ -339,7 +339,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_user_access_rules_oapg(
+        return self._user_list_access_rules_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,

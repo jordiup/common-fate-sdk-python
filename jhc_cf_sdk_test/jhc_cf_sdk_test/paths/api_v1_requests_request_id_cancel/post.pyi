@@ -296,7 +296,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _cancel_request_oapg(
+    def _user_cancel_request_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -308,7 +308,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _cancel_request_oapg(
+    def _user_cancel_request_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -318,7 +318,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _cancel_request_oapg(
+    def _user_cancel_request_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -330,7 +330,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _cancel_request_oapg(
+    def _user_cancel_request_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -393,11 +393,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class CancelRequest(BaseApi):
+class UserCancelRequest(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def cancel_request(
+    def user_cancel_request(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -409,7 +409,7 @@ class CancelRequest(BaseApi):
     ]: ...
 
     @typing.overload
-    def cancel_request(
+    def user_cancel_request(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -419,7 +419,7 @@ class CancelRequest(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def cancel_request(
+    def user_cancel_request(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -431,7 +431,7 @@ class CancelRequest(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def cancel_request(
+    def user_cancel_request(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -439,7 +439,7 @@ class CancelRequest(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._cancel_request_oapg(
+        return self._user_cancel_request_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -494,7 +494,7 @@ class ApiForpost(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._cancel_request_oapg(
+        return self._user_cancel_request_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,

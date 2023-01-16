@@ -1,9 +1,11 @@
 # jhc_cf_sdk_test.model.favorite_detail.FavoriteDetail
 
+Detailed object for a Favorite. 
+
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-dict, frozendict.frozendict,  | frozendict.frozendict,  |  | 
+dict, frozendict.frozendict,  | frozendict.frozendict,  | Detailed object for a Favorite.  | 
 
 ### Dictionary Keys
 Key | Input Type | Accessed Type | Description | Notes

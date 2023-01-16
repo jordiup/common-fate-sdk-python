@@ -190,7 +190,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _identity_sync_oapg(
+    def _admin_sync_identity_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -201,7 +201,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _identity_sync_oapg(
+    def _admin_sync_identity_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -210,7 +210,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _identity_sync_oapg(
+    def _admin_sync_identity_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -221,7 +221,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _identity_sync_oapg(
+    def _admin_sync_identity_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -269,11 +269,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class IdentitySync(BaseApi):
+class AdminSyncIdentity(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def identity_sync(
+    def admin_sync_identity(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -284,7 +284,7 @@ class IdentitySync(BaseApi):
     ]: ...
 
     @typing.overload
-    def identity_sync(
+    def admin_sync_identity(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -293,7 +293,7 @@ class IdentitySync(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def identity_sync(
+    def admin_sync_identity(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -304,14 +304,14 @@ class IdentitySync(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def identity_sync(
+    def admin_sync_identity(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._identity_sync_oapg(
+        return self._admin_sync_identity_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
@@ -361,7 +361,7 @@ class ApiForpost(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._identity_sync_oapg(
+        return self._admin_sync_identity_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,

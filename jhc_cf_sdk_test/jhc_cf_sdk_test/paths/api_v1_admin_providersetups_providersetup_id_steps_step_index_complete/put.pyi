@@ -191,7 +191,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _submit_providersetup_step_oapg(
+    def _admin_submit_providersetup_step_oapg(
         self,
         content_type: typing_extensions.Literal["application/json"] = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -205,7 +205,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _submit_providersetup_step_oapg(
+    def _admin_submit_providersetup_step_oapg(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -220,7 +220,7 @@ class BaseApi(api_client.Api):
 
 
     @typing.overload
-    def _submit_providersetup_step_oapg(
+    def _admin_submit_providersetup_step_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         content_type: str = ...,
@@ -232,7 +232,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _submit_providersetup_step_oapg(
+    def _admin_submit_providersetup_step_oapg(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -246,7 +246,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _submit_providersetup_step_oapg(
+    def _admin_submit_providersetup_step_oapg(
         self,
         content_type: str = 'application/json',
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -323,11 +323,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class SubmitProvidersetupStep(BaseApi):
+class AdminSubmitProvidersetupStep(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def submit_providersetup_step(
+    def admin_submit_providersetup_step(
         self,
         content_type: typing_extensions.Literal["application/json"] = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -341,7 +341,7 @@ class SubmitProvidersetupStep(BaseApi):
     ]: ...
 
     @typing.overload
-    def submit_providersetup_step(
+    def admin_submit_providersetup_step(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -356,7 +356,7 @@ class SubmitProvidersetupStep(BaseApi):
 
 
     @typing.overload
-    def submit_providersetup_step(
+    def admin_submit_providersetup_step(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         content_type: str = ...,
@@ -368,7 +368,7 @@ class SubmitProvidersetupStep(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def submit_providersetup_step(
+    def admin_submit_providersetup_step(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -382,7 +382,7 @@ class SubmitProvidersetupStep(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def submit_providersetup_step(
+    def admin_submit_providersetup_step(
         self,
         content_type: str = 'application/json',
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -392,7 +392,7 @@ class SubmitProvidersetupStep(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._submit_providersetup_step_oapg(
+        return self._admin_submit_providersetup_step_oapg(
             body=body,
             path_params=path_params,
             content_type=content_type,
@@ -472,7 +472,7 @@ class ApiForput(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._submit_providersetup_step_oapg(
+        return self._admin_submit_providersetup_step_oapg(
             body=body,
             path_params=path_params,
             content_type=content_type,

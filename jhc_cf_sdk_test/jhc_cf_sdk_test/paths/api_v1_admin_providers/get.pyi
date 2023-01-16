@@ -224,7 +224,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _list_providers_oapg(
+    def _admin_list_providers_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -235,7 +235,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _list_providers_oapg(
+    def _admin_list_providers_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -244,7 +244,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _list_providers_oapg(
+    def _admin_list_providers_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -255,7 +255,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _list_providers_oapg(
+    def _admin_list_providers_oapg(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -303,11 +303,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class ListProviders(BaseApi):
+class AdminListProviders(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def list_providers(
+    def admin_list_providers(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -318,7 +318,7 @@ class ListProviders(BaseApi):
     ]: ...
 
     @typing.overload
-    def list_providers(
+    def admin_list_providers(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -327,7 +327,7 @@ class ListProviders(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def list_providers(
+    def admin_list_providers(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
@@ -338,14 +338,14 @@ class ListProviders(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def list_providers(
+    def admin_list_providers(
         self,
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_providers_oapg(
+        return self._admin_list_providers_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
@@ -395,7 +395,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._list_providers_oapg(
+        return self._admin_list_providers_oapg(
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,

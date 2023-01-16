@@ -84,7 +84,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _get_access_instructions_oapg(
+    def _user_get_access_instructions_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -96,7 +96,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _get_access_instructions_oapg(
+    def _user_get_access_instructions_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -106,7 +106,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _get_access_instructions_oapg(
+    def _user_get_access_instructions_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -118,7 +118,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _get_access_instructions_oapg(
+    def _user_get_access_instructions_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -181,11 +181,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class GetAccessInstructions(BaseApi):
+class UserGetAccessInstructions(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def get_access_instructions(
+    def user_get_access_instructions(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -197,7 +197,7 @@ class GetAccessInstructions(BaseApi):
     ]: ...
 
     @typing.overload
-    def get_access_instructions(
+    def user_get_access_instructions(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -207,7 +207,7 @@ class GetAccessInstructions(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def get_access_instructions(
+    def user_get_access_instructions(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -219,7 +219,7 @@ class GetAccessInstructions(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def get_access_instructions(
+    def user_get_access_instructions(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -227,7 +227,7 @@ class GetAccessInstructions(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_access_instructions_oapg(
+        return self._user_get_access_instructions_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -282,7 +282,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_access_instructions_oapg(
+        return self._user_get_access_instructions_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,

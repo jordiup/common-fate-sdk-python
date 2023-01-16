@@ -384,7 +384,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _update_user_oapg(
+    def _admin_update_user_oapg(
         self,
         content_type: typing_extensions.Literal["application/json"] = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -398,7 +398,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _update_user_oapg(
+    def _admin_update_user_oapg(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -413,7 +413,7 @@ class BaseApi(api_client.Api):
 
 
     @typing.overload
-    def _update_user_oapg(
+    def _admin_update_user_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         content_type: str = ...,
@@ -425,7 +425,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _update_user_oapg(
+    def _admin_update_user_oapg(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -439,7 +439,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _update_user_oapg(
+    def _admin_update_user_oapg(
         self,
         content_type: str = 'application/json',
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -515,11 +515,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class UpdateUser(BaseApi):
+class AdminUpdateUser(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def update_user(
+    def admin_update_user(
         self,
         content_type: typing_extensions.Literal["application/json"] = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -533,7 +533,7 @@ class UpdateUser(BaseApi):
     ]: ...
 
     @typing.overload
-    def update_user(
+    def admin_update_user(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -548,7 +548,7 @@ class UpdateUser(BaseApi):
 
 
     @typing.overload
-    def update_user(
+    def admin_update_user(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         content_type: str = ...,
@@ -560,7 +560,7 @@ class UpdateUser(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def update_user(
+    def admin_update_user(
         self,
         content_type: str = ...,
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -574,7 +574,7 @@ class UpdateUser(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def update_user(
+    def admin_update_user(
         self,
         content_type: str = 'application/json',
         body: typing.Union[SchemaForRequestBodyApplicationJson, dict, frozendict.frozendict, schemas.Unset] = schemas.unset,
@@ -584,7 +584,7 @@ class UpdateUser(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._update_user_oapg(
+        return self._admin_update_user_oapg(
             body=body,
             path_params=path_params,
             content_type=content_type,
@@ -664,7 +664,7 @@ class ApiForpost(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._update_user_oapg(
+        return self._admin_update_user_oapg(
             body=body,
             path_params=path_params,
             content_type=content_type,

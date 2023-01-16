@@ -131,7 +131,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _complete_providersetup_oapg(
+    def _admin_complete_providersetup_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -143,7 +143,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _complete_providersetup_oapg(
+    def _admin_complete_providersetup_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -153,7 +153,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _complete_providersetup_oapg(
+    def _admin_complete_providersetup_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -165,7 +165,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _complete_providersetup_oapg(
+    def _admin_complete_providersetup_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -228,11 +228,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class CompleteProvidersetup(BaseApi):
+class AdminCompleteProvidersetup(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def complete_providersetup(
+    def admin_complete_providersetup(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -244,7 +244,7 @@ class CompleteProvidersetup(BaseApi):
     ]: ...
 
     @typing.overload
-    def complete_providersetup(
+    def admin_complete_providersetup(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -254,7 +254,7 @@ class CompleteProvidersetup(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def complete_providersetup(
+    def admin_complete_providersetup(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -266,7 +266,7 @@ class CompleteProvidersetup(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def complete_providersetup(
+    def admin_complete_providersetup(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -274,7 +274,7 @@ class CompleteProvidersetup(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._complete_providersetup_oapg(
+        return self._admin_complete_providersetup_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -329,7 +329,7 @@ class ApiForpost(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._complete_providersetup_oapg(
+        return self._admin_complete_providersetup_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,

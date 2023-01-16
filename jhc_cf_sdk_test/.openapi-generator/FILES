@@ -4,7 +4,6 @@
 .travis.yml
 README.md
 docs/apis/tags/AdminApi.md
-docs/apis/tags/DefaultApi.md
 docs/apis/tags/EndUserApi.md
 docs/models/AccessInstructions.md
 docs/models/AccessRule.md
@@ -61,7 +60,6 @@ jhc_cf_sdk_test/__init__.py
 jhc_cf_sdk_test/api_client.py
 jhc_cf_sdk_test/apis/__init__.py
 jhc_cf_sdk_test/apis/tags/admin_api.py
-jhc_cf_sdk_test/apis/tags/default_api.py
 jhc_cf_sdk_test/apis/tags/end_user_api.py
 jhc_cf_sdk_test/configuration.py
 jhc_cf_sdk_test/exceptions.py

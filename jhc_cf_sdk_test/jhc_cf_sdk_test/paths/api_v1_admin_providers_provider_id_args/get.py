@@ -232,7 +232,7 @@ _all_accept_content_types = (
 
 class BaseApi(api_client.Api):
     @typing.overload
-    def _get_provider_args_oapg(
+    def _admin_get_provider_args_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -244,7 +244,7 @@ class BaseApi(api_client.Api):
     ]: ...
 
     @typing.overload
-    def _get_provider_args_oapg(
+    def _admin_get_provider_args_oapg(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -254,7 +254,7 @@ class BaseApi(api_client.Api):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def _get_provider_args_oapg(
+    def _admin_get_provider_args_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -266,7 +266,7 @@ class BaseApi(api_client.Api):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def _get_provider_args_oapg(
+    def _admin_get_provider_args_oapg(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -329,11 +329,11 @@ class BaseApi(api_client.Api):
         return api_response
 
 
-class GetProviderArgs(BaseApi):
+class AdminGetProviderArgs(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
     @typing.overload
-    def get_provider_args(
+    def admin_get_provider_args(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -345,7 +345,7 @@ class GetProviderArgs(BaseApi):
     ]: ...
 
     @typing.overload
-    def get_provider_args(
+    def admin_get_provider_args(
         self,
         skip_deserialization: typing_extensions.Literal[True],
         path_params: RequestPathParams = frozendict.frozendict(),
@@ -355,7 +355,7 @@ class GetProviderArgs(BaseApi):
     ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
-    def get_provider_args(
+    def admin_get_provider_args(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -367,7 +367,7 @@ class GetProviderArgs(BaseApi):
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
 
-    def get_provider_args(
+    def admin_get_provider_args(
         self,
         path_params: RequestPathParams = frozendict.frozendict(),
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
@@ -375,7 +375,7 @@ class GetProviderArgs(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_provider_args_oapg(
+        return self._admin_get_provider_args_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,
@@ -430,7 +430,7 @@ class ApiForget(BaseApi):
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: bool = False,
     ):
-        return self._get_provider_args_oapg(
+        return self._admin_get_provider_args_oapg(
             path_params=path_params,
             accept_content_types=accept_content_types,
             stream=stream,
