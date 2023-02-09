@@ -38,12 +38,14 @@ class AccessRule(
     class MetaOapg:
         required = {
             "timeConstraints",
+            "createdAt",
             "isCurrent",
             "name",
             "description",
             "id",
             "version",
             "target",
+            "updatedAt",
         }
         
         class properties:
@@ -60,6 +62,8 @@ class AccessRule(
             def timeConstraints() -> typing.Type['TimeConstraints']:
                 return TimeConstraints
             isCurrent = schemas.BoolSchema
+            createdAt = schemas.StrSchema
+            updatedAt = schemas.StrSchema
             __annotations__ = {
                 "id": id,
                 "version": version,
@@ -68,15 +72,19 @@ class AccessRule(
                 "target": target,
                 "timeConstraints": timeConstraints,
                 "isCurrent": isCurrent,
+                "createdAt": createdAt,
+                "updatedAt": updatedAt,
             }
     
     timeConstraints: 'TimeConstraints'
+    createdAt: MetaOapg.properties.createdAt
     isCurrent: MetaOapg.properties.isCurrent
     name: MetaOapg.properties.name
     description: MetaOapg.properties.description
     id: MetaOapg.properties.id
     version: MetaOapg.properties.version
     target: 'AccessRuleTarget'
+    updatedAt: MetaOapg.properties.updatedAt
     
     @typing.overload
     def __getitem__(self, name: typing_extensions.Literal["id"]) -> MetaOapg.properties.id: ...
@@ -100,9 +108,15 @@ class AccessRule(
     def __getitem__(self, name: typing_extensions.Literal["isCurrent"]) -> MetaOapg.properties.isCurrent: ...
     
     @typing.overload
+    def __getitem__(self, name: typing_extensions.Literal["createdAt"]) -> MetaOapg.properties.createdAt: ...
+    
+    @typing.overload
+    def __getitem__(self, name: typing_extensions.Literal["updatedAt"]) -> MetaOapg.properties.updatedAt: ...
+    
+    @typing.overload
     def __getitem__(self, name: str) -> schemas.UnsetAnyTypeSchema: ...
     
-    def __getitem__(self, name: typing.Union[typing_extensions.Literal["id", "version", "name", "description", "target", "timeConstraints", "isCurrent", ], str]):
+    def __getitem__(self, name: typing.Union[typing_extensions.Literal["id", "version", "name", "description", "target", "timeConstraints", "isCurrent", "createdAt", "updatedAt", ], str]):
         # dict_instance[name] accessor
         return super().__getitem__(name)
     
@@ -129,9 +143,15 @@ class AccessRule(
     def get_item_oapg(self, name: typing_extensions.Literal["isCurrent"]) -> MetaOapg.properties.isCurrent: ...
     
     @typing.overload
+    def get_item_oapg(self, name: typing_extensions.Literal["createdAt"]) -> MetaOapg.properties.createdAt: ...
+    
+    @typing.overload
+    def get_item_oapg(self, name: typing_extensions.Literal["updatedAt"]) -> MetaOapg.properties.updatedAt: ...
+    
+    @typing.overload
     def get_item_oapg(self, name: str) -> typing.Union[schemas.UnsetAnyTypeSchema, schemas.Unset]: ...
     
-    def get_item_oapg(self, name: typing.Union[typing_extensions.Literal["id", "version", "name", "description", "target", "timeConstraints", "isCurrent", ], str]):
+    def get_item_oapg(self, name: typing.Union[typing_extensions.Literal["id", "version", "name", "description", "target", "timeConstraints", "isCurrent", "createdAt", "updatedAt", ], str]):
         return super().get_item_oapg(name)
     
 
@@ -139,12 +159,14 @@ class AccessRule(
         cls,
         *_args: typing.Union[dict, frozendict.frozendict, ],
         timeConstraints: 'TimeConstraints',
+        createdAt: typing.Union[MetaOapg.properties.createdAt, str, ],
         isCurrent: typing.Union[MetaOapg.properties.isCurrent, bool, ],
         name: typing.Union[MetaOapg.properties.name, str, ],
         description: typing.Union[MetaOapg.properties.description, str, ],
         id: typing.Union[MetaOapg.properties.id, str, ],
         version: typing.Union[MetaOapg.properties.version, str, ],
         target: 'AccessRuleTarget',
+        updatedAt: typing.Union[MetaOapg.properties.updatedAt, str, ],
         _configuration: typing.Optional[schemas.Configuration] = None,
         **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
     ) -> 'AccessRule':
@@ -152,12 +174,14 @@ class AccessRule(
             cls,
             *_args,
             timeConstraints=timeConstraints,
+            createdAt=createdAt,
             isCurrent=isCurrent,
             name=name,
             description=description,
             id=id,
             version=version,
             target=target,
+            updatedAt=updatedAt,
             _configuration=_configuration,
             **kwargs,
         )

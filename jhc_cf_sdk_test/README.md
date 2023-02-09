@@ -144,11 +144,10 @@ from pprint import pprint
 from jhc_cf_sdk_test.apis.tags import admin_api
 from jhc_cf_sdk_test.model.access_rule_detail import AccessRuleDetail
 from jhc_cf_sdk_test.model.approver_config import ApproverConfig
+from jhc_cf_sdk_test.model.arg_options import ArgOptions
 from jhc_cf_sdk_test.model.arg_schema import ArgSchema
 from jhc_cf_sdk_test.model.create_access_rule_target import CreateAccessRuleTarget
 from jhc_cf_sdk_test.model.group import Group
-from jhc_cf_sdk_test.model.groups import Groups
-from jhc_cf_sdk_test.model.option import Option
 from jhc_cf_sdk_test.model.provider import Provider
 from jhc_cf_sdk_test.model.provider_setup import ProviderSetup
 from jhc_cf_sdk_test.model.provider_setup_instructions import ProviderSetupInstructions
@@ -249,6 +248,7 @@ Class | Method | HTTP request | Description
  - [AccessRuleTargetDetailArguments](docs/models/AccessRuleTargetDetailArguments.md)
  - [ApprovalMethod](docs/models/ApprovalMethod.md)
  - [ApproverConfig](docs/models/ApproverConfig.md)
+ - [ArgOptions](docs/models/ArgOptions.md)
  - [ArgSchema](docs/models/ArgSchema.md)
  - [Argument](docs/models/Argument.md)
  - [CreateAccessRuleTarget](docs/models/CreateAccessRuleTarget.md)

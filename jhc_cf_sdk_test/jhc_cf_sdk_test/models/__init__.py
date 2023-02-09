@@ -21,6 +21,7 @@ from jhc_cf_sdk_test.model.access_rule_target_detail import AccessRuleTargetDeta
 from jhc_cf_sdk_test.model.access_rule_target_detail_arguments import AccessRuleTargetDetailArguments
 from jhc_cf_sdk_test.model.approval_method import ApprovalMethod
 from jhc_cf_sdk_test.model.approver_config import ApproverConfig
+from jhc_cf_sdk_test.model.arg_options import ArgOptions
 from jhc_cf_sdk_test.model.arg_schema import ArgSchema
 from jhc_cf_sdk_test.model.argument import Argument
 from jhc_cf_sdk_test.model.create_access_rule_target import CreateAccessRuleTarget

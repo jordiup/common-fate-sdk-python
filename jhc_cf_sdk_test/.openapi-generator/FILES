@@ -15,6 +15,7 @@ docs/models/AccessRuleTargetDetail.md
 docs/models/AccessRuleTargetDetailArguments.md
 docs/models/ApprovalMethod.md
 docs/models/ApproverConfig.md
+docs/models/ArgOptions.md
 docs/models/ArgSchema.md
 docs/models/Argument.md
 docs/models/CreateAccessRuleTarget.md
@@ -84,6 +85,8 @@ jhc_cf_sdk_test/model/approval_method.py
 jhc_cf_sdk_test/model/approval_method.pyi
 jhc_cf_sdk_test/model/approver_config.py
 jhc_cf_sdk_test/model/approver_config.pyi
+jhc_cf_sdk_test/model/arg_options.py
+jhc_cf_sdk_test/model/arg_options.pyi
 jhc_cf_sdk_test/model/arg_schema.py
 jhc_cf_sdk_test/model/arg_schema.pyi
 jhc_cf_sdk_test/model/argument.py
@@ -183,6 +186,7 @@ test/test_models/test_access_rule_target_detail.py
 test/test_models/test_access_rule_target_detail_arguments.py
 test/test_models/test_approval_method.py
 test/test_models/test_approver_config.py
+test/test_models/test_arg_options.py
 test/test_models/test_arg_schema.py
 test/test_models/test_argument.py
 test/test_models/test_create_access_rule_target.py

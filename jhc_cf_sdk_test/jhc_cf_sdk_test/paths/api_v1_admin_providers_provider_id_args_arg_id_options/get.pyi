@@ -25,8 +25,7 @@ import frozendict  # noqa: F401
 
 from jhc_cf_sdk_test import schemas  # noqa: F401
 
-from jhc_cf_sdk_test.model.groups import Groups
-from jhc_cf_sdk_test.model.option import Option
+from jhc_cf_sdk_test.model.arg_options import ArgOptions
 
 # Query params
 RefreshSchema = schemas.BoolSchema
@@ -88,99 +87,7 @@ request_path_arg_id = api_client.PathParameter(
     schema=ArgIdSchema,
     required=True,
 )
-
-
-class SchemaFor200ResponseBodyApplicationJson(
-    schemas.DictSchema
-):
-
-
-    class MetaOapg:
-        required = {
-            "options",
-        }
-        
-        class properties:
-            
-            
-            class options(
-                schemas.ListSchema
-            ):
-            
-            
-                class MetaOapg:
-                    
-                    @staticmethod
-                    def items() -> typing.Type['Option']:
-                        return Option
-            
-                def __new__(
-                    cls,
-                    _arg: typing.Union[typing.Tuple['Option'], typing.List['Option']],
-                    _configuration: typing.Optional[schemas.Configuration] = None,
-                ) -> 'options':
-                    return super().__new__(
-                        cls,
-                        _arg,
-                        _configuration=_configuration,
-                    )
-            
-                def __getitem__(self, i: int) -> 'Option':
-                    return super().__getitem__(i)
-        
-            @staticmethod
-            def groups() -> typing.Type['Groups']:
-                return Groups
-            __annotations__ = {
-                "options": options,
-                "groups": groups,
-            }
-    
-    options: MetaOapg.properties.options
-    
-    @typing.overload
-    def __getitem__(self, name: typing_extensions.Literal["options"]) -> MetaOapg.properties.options: ...
-    
-    @typing.overload
-    def __getitem__(self, name: typing_extensions.Literal["groups"]) -> 'Groups': ...
-    
-    @typing.overload
-    def __getitem__(self, name: str) -> schemas.UnsetAnyTypeSchema: ...
-    
-    def __getitem__(self, name: typing.Union[typing_extensions.Literal["options", "groups", ], str]):
-        # dict_instance[name] accessor
-        return super().__getitem__(name)
-    
-    
-    @typing.overload
-    def get_item_oapg(self, name: typing_extensions.Literal["options"]) -> MetaOapg.properties.options: ...
-    
-    @typing.overload
-    def get_item_oapg(self, name: typing_extensions.Literal["groups"]) -> typing.Union['Groups', schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_oapg(self, name: str) -> typing.Union[schemas.UnsetAnyTypeSchema, schemas.Unset]: ...
-    
-    def get_item_oapg(self, name: typing.Union[typing_extensions.Literal["options", "groups", ], str]):
-        return super().get_item_oapg(name)
-    
-
-    def __new__(
-        cls,
-        *_args: typing.Union[dict, frozendict.frozendict, ],
-        options: typing.Union[MetaOapg.properties.options, list, tuple, ],
-        groups: typing.Union['Groups', schemas.Unset] = schemas.unset,
-        _configuration: typing.Optional[schemas.Configuration] = None,
-        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
-    ) -> 'SchemaFor200ResponseBodyApplicationJson':
-        return super().__new__(
-            cls,
-            *_args,
-            options=options,
-            groups=groups,
-            _configuration=_configuration,
-            **kwargs,
-        )
+SchemaFor200ResponseBodyApplicationJson = ArgOptions
 
 
 @dataclass

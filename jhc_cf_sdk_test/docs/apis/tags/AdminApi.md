@@ -2467,7 +2467,7 @@ No authorization required
 
 # **admin_list_provider_arg_options**
 <a name="admin_list_provider_arg_options"></a>
-> {str: (bool, date, datetime, dict, float, int, list, str, none_type)} admin_list_provider_arg_options(provider_idarg_id)
+> ArgOptions admin_list_provider_arg_options(provider_idarg_id)
 
 List provider arg options
 
@@ -2478,8 +2478,7 @@ Returns the options for a particular Access Provider argument. The options may b
 ```python
 import jhc_cf_sdk_test
 from jhc_cf_sdk_test.apis.tags import admin_api
-from jhc_cf_sdk_test.model.groups import Groups
-from jhc_cf_sdk_test.model.option import Option
+from jhc_cf_sdk_test.model.arg_options import ArgOptions
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:8080
 # See configuration.py for a list of all supported configuration parameters.
@@ -2580,7 +2579,7 @@ str,  | str,  |  |
 Code | Class | Description
 ------------- | ------------- | -------------
 n/a | api_client.ApiResponseWithoutDeserialization | When skip_deserialization is True this response is returned
-200 | [ApiResponseFor200](#admin_list_provider_arg_options.ApiResponseFor200) | Options for an Grant argument.
+200 | [ApiResponseFor200](#admin_list_provider_arg_options.ApiResponseFor200) | OK
 401 | [ApiResponseFor401](#admin_list_provider_arg_options.ApiResponseFor401) | An error returned from the service.
 500 | [ApiResponseFor500](#admin_list_provider_arg_options.ApiResponseFor500) | An error returned from the service.
 
@@ -2592,32 +2591,10 @@ body | typing.Union[SchemaFor200ResponseBodyApplicationJson, ] |  |
 headers | Unset | headers were not defined |
 
 # SchemaFor200ResponseBodyApplicationJson
+Type | Description  | Notes
+------------- | ------------- | -------------
+[**ArgOptions**](../../models/ArgOptions.md) |  | 
 
-## Model Type Info
-Input Type | Accessed Type | Description | Notes
------------- | ------------- | ------------- | -------------
-dict, frozendict.frozendict,  | frozendict.frozendict,  |  | 
-
-### Dictionary Keys
-Key | Input Type | Accessed Type | Description | Notes
------------- | ------------- | ------------- | ------------- | -------------
-**[options](#options)** | list, tuple,  | tuple,  | The suggested options. | 
-**groups** | [**Groups**]({{complexTypePrefix}}Groups.md) | [**Groups**]({{complexTypePrefix}}Groups.md) |  | [optional] 
-**any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
-
-# options
-
-The suggested options.
-
-## Model Type Info
-Input Type | Accessed Type | Description | Notes
------------- | ------------- | ------------- | -------------
-list, tuple,  | tuple,  | The suggested options. | 
-
-### Tuple Items
-Class Name | Input Type | Accessed Type | Description | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-[**Option**]({{complexTypePrefix}}Option.md) | [**Option**]({{complexTypePrefix}}Option.md) | [**Option**]({{complexTypePrefix}}Option.md) |  | 
 
 #### admin_list_provider_arg_options.ApiResponseFor401
 Name | Type | Description  | Notes
